@@ -1,8 +1,8 @@
 :root {
-    --main-white: #f0f0f0;
+    --main-white: #FFFAF0;
     --main-indigo: #4B0082;
-    --main-blue: #45567d;
-    --main-gray: #303841;
+    --main-lightpurple: #9370DB;
+    --main-gray: #4d4d4d;
   }
   
   * {
@@ -59,6 +59,8 @@
   
   h1 {
     font-size: 6rem;
+    color: var(--main-white);
+    text-shadow: 5px 1px var(--main-indigo);
   }
   
   h2 {
@@ -114,7 +116,7 @@
   }
   
   .nav-list a:hover {
-    background: var(--main-blue);
+    background: var(--main-gray);
   }
   
   
@@ -126,27 +128,28 @@
     width: 100%;
     height: 100vh;
     background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-image: linear-gradient(180deg, var(--main-indigo) 65%, var(--main-lightpurple) 95%);
   }
   
   .welcome-section > p {
-    font-size: 3rem;
-    font-weight: 200;
+    font-size: 4rem;
+    font-weight: bold;
     font-style: italic;
-    color: var(--main-indigo);
+    color: var(--main-white);
+    text-shadow: 5px 1px var(--main-indigo);
   }
   
   
   .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--main-blue);
+    background: var(--main-lightpurple);
   }
   
   .projects-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid var(--main-white);
+    border-bottom: 0.2rem solid var(--main-indigo);
   }
   
   @media (max-width: 28.75em) {
@@ -187,7 +190,7 @@
   }
   
   .project:hover .code {
-    color: #ff7f50;
+    color: var(--main-lightpurple);
   }
   
   .project-image {
