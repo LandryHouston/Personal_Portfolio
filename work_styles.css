@@ -47,6 +47,10 @@ body {
     font-weight: 400;
     line-height: 1.4;
     color: var(--main-white);
+    background-image: url("wallpaper.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 ul {
@@ -60,19 +64,17 @@ a {
 
 .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
-    background: var(--main-indigo);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    background: rgba(0,0,0,0.5);;
     z-index: 10;
 }
 
 .nav-list {
     display: flex;
-    margin-right: 2rem;
 }
 
 @media (max-width: 28.75em) {
@@ -87,10 +89,12 @@ a {
 
 .nav-list a {
     display: block;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     padding: 2rem;
+    padding-right: 5em;
+    padding-left: 5em;
 }
 
 .nav-list a:hover {
-    background: var(--main-gray);
+    background: rgba(0,0,0,0.5);;
 }
