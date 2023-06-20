@@ -16,31 +16,6 @@
     box-sizing: inherit;
 }
 
-html {
-    box-sizing: border-box;
-
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-@media (max-width: 75em) {
-    html {
-        font-size: 60%;
-    }
-}
-
-@media (max-width: 61.25em) {
-    html {
-        font-size: 58%;
-    }
-}
-
-@media (max-width: 28.75em) {
-    html {
-        font-size: 55%;
-    }
-}
-
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem; /* 18px */
@@ -51,6 +26,8 @@ body {
 
 #video {
   position: absolute;
+  width: 100%;
+  height: 100%;
   object-fit: fill;
 }
 
@@ -77,11 +54,6 @@ a {
 .nav-list {
     display: flex;
 }
-
-@media (max-width: 28.75em) {
-    .nav {
-        justify-content: center;
-    }
 
     .nav-list {
         margin: 0  1rem;
