@@ -46,13 +46,11 @@ body {
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
-    color: var(--main-white);  
-}
-
-#video {
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
+    color: var(--main-white);
+    background-image: url("wallpaper.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 ul {
@@ -85,7 +83,7 @@ a {
     }
 
     .nav-list {
-        margin: 0  1rem;
+        margin: 0 1rem;
     }
 }
 
@@ -100,4 +98,3 @@ a {
 .nav-list a:hover {
     background: rgba(0,0,0,0.5);;
 }
-
