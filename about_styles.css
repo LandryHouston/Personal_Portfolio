@@ -71,3 +71,14 @@ a {
 .nav-list a:hover {
     background: rgba(0,0,0,0.5);;
 }
+
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-list {
+        margin: 0 1rem;
+    }
+}
+
