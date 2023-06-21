@@ -11,7 +11,6 @@
 
 html {
     box-sizing: border-box;
-    background: gray;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -99,7 +98,7 @@ a {
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     padding: 0 2rem;
 }
 
@@ -141,11 +140,11 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    border-top: 4px solid white
+    border-top: 4px solid white;
 }
 
 footer > p {
-    margin: 2rem;
+    margin: 3.5rem;
 }
 
 footer i {
