@@ -11,6 +11,7 @@
 
 html {
     box-sizing: border-box;
+    background-color: #151515;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -38,7 +39,7 @@ body {
     font-size: 1.8rem; /* 18px */
     font-weight: 400;
     line-height: 1.4;
-    color: white;
+    color: white
     background-image: url("wallpaper1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -51,7 +52,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: white
+    color: white;
 }
 
 .nav {
