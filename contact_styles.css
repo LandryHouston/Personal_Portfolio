@@ -11,6 +11,7 @@
 
 html {
     box-sizing: border-box;
+    background: gray;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -133,4 +134,27 @@ a {
 
 .contact-details:hover {
     transform: translateY(8px);
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-top: 4px solid white;
+}
+
+footer > p {
+    margin: 3.5rem;
+}
+
+footer i {
+    vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
 }
