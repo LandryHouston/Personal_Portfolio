@@ -140,7 +140,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    border-top: 4px solid white;
+    border-top: 2px solid white;
 }
 
 footer > p {
