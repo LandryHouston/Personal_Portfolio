@@ -141,7 +141,6 @@ footer {
     justify-content: space-evenly;
     padding: 2rem;
     border-top: 4px solid white;
-    text-align: center;
 }
 
 footer > p {
@@ -155,6 +154,5 @@ footer i {
 @media (max-width: 28.75em) {
     footer {
         flex-direction: column;
-        text-align: center;
     }
 }
