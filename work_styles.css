@@ -11,6 +11,7 @@
 
 html {
     box-sizing: border-box;
+    background-color: black;
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
@@ -158,4 +159,26 @@ a {
 .project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-top: 2px solid white;
+}
+
+footer > p {
+    margin: 3.5rem;
+}
+
+footer i {
+    vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+    footer {
+        flex-direction: column;
+    }
 }
