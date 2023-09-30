@@ -108,7 +108,7 @@ a {
     justify-content: center;
     width: 100%;
     margin-bottom: 4em;
-    border-bottom: 0.2rem solid white;
+    border-bottom: 2px solid white;
 }
 
 .project_nav-list {
@@ -129,12 +129,17 @@ a {
 .project_nav-list a {
     display: block;
     font-size: 2.4rem;
-    padding-right: 3rem;
+    padding-right: 2.8rem;
     padding-left: 3rem;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .project_nav-list a:hover {
-    border-bottom: 1px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
 
 .projects-sub-label {
