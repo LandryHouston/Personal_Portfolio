@@ -99,19 +99,42 @@ a {
 
 .projects-sub-header {
     max-width: 1107px;
-    margin: 6rem auto 8rem auto;
+    margin: 6rem auto 4rem auto;
+    font-size: 6em;
+}
+
+.project_nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4em;
     border-bottom: 0.2rem solid white;
-    font-size: 4em;
+}
+
+.project_nav-list {
+    display: flex;
+    margin-bottom: 8rem;
 }
 
 @media (max-width: 28.75em) {
-    .nav {
+    .project_nav {
         justify-content: center;
     }
 
-    .project-nav-list {
+    .project_nav-list {
         margin: 0 5rem;
     }
+}
+
+.project_nav-list a {
+    display: block;
+    font-size: 2.4rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.project_nav-list a:hover {
+    border-bottom: 1px solid white;
 }
 
 .projects-sub-label {
