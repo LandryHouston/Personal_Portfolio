@@ -148,6 +148,10 @@ a {
     font-size: 2em;
 }
 
+.projects-sub-description {
+    margin-bottom: 50em;
+}
+
 @media (max-width: 28.75em) {
     .projects-sub-header {
         font-size: 4rem;
