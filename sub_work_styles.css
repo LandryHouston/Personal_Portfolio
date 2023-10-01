@@ -183,6 +183,19 @@ a {
     border-bottom: solid 1px white;
 }
 
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 1.25rem;
+    background-color: #080808;
+}
+
 footer {
     font-weight: 300;
     display: flex;
