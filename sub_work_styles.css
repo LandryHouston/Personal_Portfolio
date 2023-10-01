@@ -148,6 +148,28 @@ a {
     font-size: 3em;
 }
 
+.projects-sub-label-description {
+    max-width: 640px;
+    margin: 0 auto 2em auto;
+    font-size: 3em;
+}
+
+.projects-sub-label-data {
+    max-width: 640px;
+    margin: 0 auto 2em auto;
+    font-size: 3em;
+}
+.projects-sub-label-code {
+    max-width: 640px;
+    margin: 0 auto 2em auto;
+    font-size: 3em;
+}
+.projects-sub-label-visual {
+    max-width: 640px;
+    margin: 0 auto 2em auto;
+    font-size: 3em;
+}
+
 .projects-sub-description {
     margin-bottom: 50em;
 }
@@ -176,7 +198,7 @@ a {
     text-align: left;
     display: inline-block;
     margin-bottom: 10em;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 .here {
