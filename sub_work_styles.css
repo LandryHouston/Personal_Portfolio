@@ -8,6 +8,25 @@
 *::after {
     box-sizing: inherit;
 }
+ul li {
+    display: inline-block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+ul li ul {
+    position: absolute;
+    display: none;
+    background-color: #080808;
+}
+ul li ul li {
+    display: flex;
+}
+ul li ul li a {
+    display: block !important;
+    background: #080808;
+}
 
 html {
     box-sizing: border-box;
@@ -167,20 +186,25 @@ a {
 .projects-sub-description {
     margin-top: 10rem;
     margin-bottom: 50em;
+    scroll-margin-top: 18em;
 }
 
 .projects-sub-data {
     margin-top: 10rem;
+    scroll-margin-top: 18em;
 }
 
 .projects-sub-visual {
     margin-top: 10rem;
+    margin-bottom: 10em;
+    scroll-margin-top: 18em;
 }
 
 .projects-sub-code {
     text-align: left;
     display: inline-block;
     margin: 2em auto 10em auto;
+    scroll-margin-top: 18em;
 }
 
 .dataframe {
