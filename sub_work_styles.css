@@ -142,31 +142,25 @@ a {
     border-right: 2px solid white;
 }
 
-.projects-sub-label {
-    max-width: 640px;
-    margin: 0 auto 3rem auto;
-    font-size: 3em;
-}
-
 .projects-sub-label-description {
     max-width: 640px;
-    margin: 0 auto 2em auto;
+    margin: 2em auto 2em auto;
     font-size: 3em;
 }
 
 .projects-sub-label-data {
     max-width: 640px;
-    margin: 0 auto 2em auto;
+    margin: 2em auto 2em auto;
     font-size: 3em;
 }
 .projects-sub-label-code {
     max-width: 640px;
-    margin: 0 auto 2em auto;
+    margin: 2em auto 2em auto;
     font-size: 3em;
 }
 .projects-sub-label-visual {
     max-width: 640px;
-    margin: 0 auto 2em auto;
+    margin: 2em auto 2em auto;
     font-size: 3em;
 }
 
@@ -182,6 +176,13 @@ a {
 .projects-sub-visual {
     margin-top: 10rem;
 }
+
+.projects-sub-code {
+    text-align: left;
+    display: inline-block;
+    margin: 2em auto 10em auto;
+}
+
 .dataframe {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -199,15 +200,14 @@ a {
         padding: 6rem 1rem;
     }
 }
-.projects-sub-code {
-    text-align: left;
-    display: inline-block;
-    margin-bottom: 10em;
-    margin-top: 2em;
-}
 
 .here {
     border-bottom: solid 1px white;
+    position: relative;
+}
+
+.here:hover {
+    top: -2px;
 }
 
 table,

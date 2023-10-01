@@ -6,11 +6,20 @@
     <head>
         <link rel="stylesheet" href="sub_work_styles.css" />
         <link rel="icon" href="logo.png" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-            crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+            rel="stylesheet"
+        />
     </head>
 
     <body>
@@ -38,11 +47,12 @@
                         <a href="#projects-sub-description">Description</a>
                     </li>
                     <li>
-                        <a href="#projects-sub-code">Code</a>
-                    </li>
-                    <li>
                         <a href="#projects-sub-data">Data</a>
                     </li>
+                    <li>
+                        <a href="#projects-sub-code">Code</a>
+                    </li>
+
                     <li>
                         <a href="#projects-sub-visual">Visuals</a>
                     </li>
@@ -51,24 +61,6 @@
             <div class="projects-sub-label-description">Description</div>
             <p class="projects-sub-description" id="projects-sub-description">
                 In this project
-            </p>
-            <div class="projects-sub-label-code">Code</div>
-            <p class="projects-sub-code" id="projects-sub-code">
-                <code>library(tidyverse)<br />
-                    library(dslabs)<br />
-                    data(stars)<br />
-                    options(digits = 3) # report 3 significant digits<br />
-                    <br />
-                    stars %>%<br />
-                    ggplot(aes(temp, magnitude, color = type)) +<br />
-                    geom_point() +<br />
-                    scale_x_reverse() +<br />
-                    scale_y_reverse() +<br />
-                    xlab("Temperature") +<br />
-                    ylab("Magnitude") +<br />
-                    geom_text(aes(label = star), check_overlap = TRUE, vjust =
-                    -1, size = 3, color = 'black')<br />
-                </code>
             </p>
             <div class="projects-sub-label-data">Data</div>
             <p class="projects-sub-data" id="projects-sub-data">
@@ -159,7 +151,26 @@
             </table>
             <p>
                 Access the full dataset
-                <a class="here" href="stars.csv" target="_blank">Here</a>
+                <a class="here" href="stars.pdf" target="_blank">Here</a>
+            </p>
+            <div class="projects-sub-label-code">Code</div>
+            <p class="projects-sub-code" id="projects-sub-code">
+                <code
+                    >library(tidyverse)<br />
+                    library(dslabs)<br />
+                    data(stars)<br />
+                    options(digits = 3) # report 3 significant digits<br />
+                    <br />
+                    stars %>%<br />
+                    ggplot(aes(temp, magnitude, color = type)) +<br />
+                    geom_point() +<br />
+                    scale_x_reverse() +<br />
+                    scale_y_reverse() +<br />
+                    xlab("Temperature") +<br />
+                    ylab("Magnitude") +<br />
+                    geom_text(aes(label = star), check_overlap = TRUE, vjust =
+                    -1, size = 3, color = 'black')<br />
+                </code>
             </p>
             <div class="projects-sub-label-visual">
                 <p class="projects-sub-visual" id="projects-sub-visual">
@@ -171,9 +182,10 @@
         <footer>
             <p>
                 Created by
-                <a href="https://www.landryhouston.com" target="_blank">Landry Houston <i class="fab fa-python"></i></a>
+                <a href="https://www.landryhouston.com" target="_blank"
+                    >Landry Houston <i class="fab fa-python"></i
+                ></a>
             </p>
         </footer>
     </body>
-
 </html>
