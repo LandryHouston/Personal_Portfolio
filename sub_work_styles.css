@@ -26,6 +26,7 @@ ul li ul li {
 ul li ul li a {
     display: block !important;
     background: #080808;
+    width: 100%;
 }
 
 html {
@@ -163,7 +164,7 @@ a {
 
 .projects-sub-label-description {
     max-width: 640px;
-    margin: 2em auto 2em auto;
+    margin: 4em auto 2em auto;
     font-size: 3em;
 }
 
@@ -174,7 +175,7 @@ a {
 }
 .projects-sub-label-code {
     max-width: 640px;
-    margin: 2em auto 2em auto;
+    margin: 6em auto 2em auto;
     font-size: 3em;
 }
 .projects-sub-label-visual {
@@ -185,7 +186,7 @@ a {
 
 .projects-sub-description {
     margin-top: 10rem;
-    margin-bottom: 50em;
+    margin-bottom: 20em;
     scroll-margin-top: 18em;
 }
 
@@ -196,14 +197,14 @@ a {
 
 .projects-sub-visual {
     margin-top: 10rem;
-    scroll-margin-top: 18em;
+    /*scroll-margin-top: 16em;*/
 }
 
 .projects-sub-code {
     text-align: left;
     display: inline-block;
     margin: 2em auto 10em auto;
-    scroll-margin-top: 18em;
+    scroll-margin-top: 20em;
 }
 
 .dataframe {
