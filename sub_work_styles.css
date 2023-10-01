@@ -171,10 +171,15 @@ a {
 }
 
 .projects-sub-description {
+    margin-top: 10rem;
     margin-bottom: 50em;
 }
 
 .projects-sub-data {
+    margin-top: 10rem;
+}
+
+.projects-sub-visual {
     margin-top: 10rem;
 }
 .dataframe {
