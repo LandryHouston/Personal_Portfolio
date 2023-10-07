@@ -64,87 +64,116 @@
                 Here is a preview of the Data
             </p>
             <table class="dataframe">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th></th>
+                    <th>Survived</th>
+                    <th>Pclass</th>
+                    <th>Sex</th>
+                    <th>Age</th>
+                    <th>SibSp</th>
+                    <th>Parch</th>
+                    <th>Fare</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>male</td>
+                    <td>22</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>7.25</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>female</td>
+                    <td>38</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>71.2833</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>female</td>
+                    <td>26</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>7.925</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>female</td>
+                    <td>35</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>53.1</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>male</td>
+                    <td>35</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>8.05</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>male</td>
+                    <td>NA</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>8.4583</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>male</td>
+                    <td>54</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>51.8625</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>male</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>21.075</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>female</td>
+                    <td>27</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>11.1333</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>female</td>
+                    <td>14</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>30.0708</td>
+                </tr>
             </table>
             <p>
                 View the full dataset
@@ -157,6 +186,40 @@
             <div class="projects-sub-label-code">Code</div>
             <p class="projects-sub-code" id="projects-sub-code">
                 <code>
+                    options(digits = 3) # report 3 significant digits<br />
+                    library(tidyverse)<br />
+                    library(titanic)<br />
+                    library(ggplot2)<br />
+                    library(dplyr)<br /><br />
+
+                    titanic <- titanic_train %>%<br />
+                        select(Survived, Pclass, Sex, Age, SibSp, Parch, Fare) %>%<br />
+                        mutate(Survived = factor(Survived),<br />
+                        Pclass = factor(Pclass),<br />
+                        Sex = factor(Sex))<br /><br />
+
+                        # plot 1 - survival filled by sex with position_dodge<br />
+                        titanic %>%<br />
+                        ggplot(aes(Survived, fill = Sex)) +<br />
+                        geom_bar(position = position_dodge())<br /><br />
+
+                        #plot 2 - sex filled by survival<br />
+                        titanic %>%<br />
+                        ggplot(aes(Sex, fill = Survived)) +<br />
+                        geom_bar()<br /><br />
+
+                        #plot 3 - plcass filled by survival with position_fill<br />
+                        titanic %>%<br />
+                        ggplot(aes(Pclass, fill = Survived)) +<br />
+                        geom_bar(position = position_fill()) +<br />
+                        ylab("Proportion")<br /><br />
+
+                        #plot 4 - survival based on sex, class, and age<br />
+                        titanic %>%<br />
+                        ggplot(aes(Age, y = ..count.., fill = Survived)) +<br />
+                        geom_density(alpha = 0.2) +<br />
+                        facet_grid(Sex ~ Pclass)<br /><br />
+
                 </code>
             </p>
             <div class="projects-sub-label-visual">
@@ -164,7 +227,10 @@
                     Visuals
                 </p>
             </div>
-            <img class="image" src="titanic_plot.png" />
+            <img class="image" src="titanic_plot1.png" />
+            <img class="image" src="titanic_plot2.png" />
+            <img class="image" src="titanic_plot3.png" />
+            <img class="image" src="titanic_plot4.png" />
         </section>
         <footer>
             <p>
