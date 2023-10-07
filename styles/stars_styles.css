@@ -8,6 +8,7 @@
 *::after {
     box-sizing: inherit;
 }
+
 ul li {
     display: inline-block;
 }

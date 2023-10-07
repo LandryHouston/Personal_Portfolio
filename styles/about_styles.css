@@ -9,6 +9,27 @@
     box-sizing: inherit;
 }
 
+ul li {
+    display: inline-block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+ul li ul {
+    position: absolute;
+    display: none;
+    background-color: #080808;
+}
+ul li ul li {
+    display: flex;
+}
+ul li ul li a {
+    display: block !important;
+    background: #080808;
+    width: 100%;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -89,4 +110,32 @@ a {
 
 .nav-list a:hover {
     background: black;
+}
+
+.header {
+    font-size: 2em;
+    text-align: center;
+    margin: 15em auto 19.3em auto;
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-top: 2px solid white;
+}
+
+footer > p {
+    margin: 3.5rem;
+}
+
+footer i {
+    vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+    footer {
+        flex-direction: column;
+    }
 }
