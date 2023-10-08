@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+ul li ul {
+    position: absolute;
+    display: none;
+    background-color: #080808;
+}
+ul li ul li {
+    display: flex;
+}
+ul li ul li a {
+    display: block !important;
+    background: #080808;
+    width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+    background-image: url("wallpaper.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: #080808;
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+}
+
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-list {
+        margin: 0 5rem;
+    }
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.4rem;
+    padding: 2rem;
+    padding-right: 5em;
+    padding-left: 5em;
+}
+
+.nav-list a:hover {
+    background: black;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: transparent;
+}
+
+.projects-sub-header {
+    max-width: 1107px;
+    margin: 6rem auto 4rem auto;
+    font-size: 6em;
+}
+
+.project_nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 6em;
+    border-bottom: 2px solid white;
+}
+
+.project_nav-list {
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 28.75em) {
+    .project_nav {
+        justify-content: center;
+    }
+
+    .project_nav-list {
+        margin: 0 5rem;
+    }
+}
+
+.project_nav-list a {
+    display: block;
+    font-size: 2.4rem;
+    padding-right: 2.8rem;
+    padding-left: 3rem;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.project_nav-list a:hover {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.projects-sub-label-description {
+    max-width: 640px;
+    margin: 0em auto 2em auto;
+    font-size: 3em;
+}
+
+.projects-sub-label-data {
+    max-width: 640px;
+    margin: 2em auto 2em auto;
+    font-size: 3em;
+}
+.projects-sub-label-code {
+    max-width: 640px;
+    margin: 6em auto 2em auto;
+    font-size: 3em;
+}
+.projects-sub-label-visual {
+    max-width: 640px;
+    margin: 2em auto 2em auto;
+    font-size: 3em;
+}
+
+.projects-sub-description {
+    margin-top: 10rem;
+    margin-bottom: 20em;
+    scroll-margin-top: 18em;
+}
+
+.projects-sub-data {
+    margin-top: 10rem;
+    scroll-margin-top: 18em;
+}
+
+.projects-sub-visual {
+    margin-top: 10rem;
+    /*scroll-margin-top: 16em;*/
+}
+
+.projects-sub-code {
+    text-align: left;
+    display: inline-block;
+    margin: 2em auto 10em auto;
+    scroll-margin-top: 20em;
+}
+
+.dataframe {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+@media (max-width: 28.75em) {
+    .projects-sub-header {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 30.625em) {
+    .projects-section {
+        padding: 6rem 1rem;
+    }
+}
+
+.here {
+    border-bottom: solid 1px white;
+    position: relative;
+}
+
+.here:hover {
+    top: -2px;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 1.25rem;
+    background-color: #080808;
+}
+
+.image {
+    margin-bottom: 4em;
+}
+
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-top: 2px solid white;
+}
+
+footer > p {
+    margin: 3.5rem;
+}
+
+footer i {
+    vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+    footer {
+        flex-direction: column;
+    }
+}
