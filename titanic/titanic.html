@@ -6,11 +6,20 @@
     <head>
         <link rel="stylesheet" href=" \styles/stars_styles.css" />
         <link rel="icon" href="logo.png" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-            crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+            rel="stylesheet"
+        />
     </head>
 
     <body>
@@ -55,24 +64,32 @@
                 </ul>
             </nav>
             <div class="projects-sub-label-description">Description</div>
-            In this project you can see the relationship of the survival rate of different sex, class, and age.<br />
+            In this project you can see the relationship of the survival rate of
+            different sex, class, and age.<br />
             This was programmed using R in R Studio<br /><br />
-            The Titanic accident was horrible, however based on the data we can now make predictions.<br />
-            We can predict that if you are a female you had a very high survival rate and would even increase further if
-            you were young.<br />
-            However just because you are a female doesnt mean you're guaranteed to survive.<br />
-            After all, if you aren't wealthy and buy a 3rd class ticket, you have a very low chance to
+            The Titanic accident was horrible, however based on the data we can
+            now make predictions.<br />
+            We can predict that if you are a female you had a very high survival
+            rate and would even increase further if you were young.<br />
+            However just because you are a female doesnt mean you're guaranteed
+            to survive.<br />
+            After all, if you aren't wealthy and buy a 3rd class ticket, you
+            have a very low chance to survive.<br />
+            If you are a man in 2nd or 3rd class, you would be very lucky
             survive.<br />
-            If you are a man in 2nd or 3rd class, you would be very lucky survive.<br />
-            You can also see in the graphs that most if not all children survived<br /><br />
-            They put children and women first. Making sure the children can have a future and the women can birth
-            more.<br /><br />
+            You can also see in the graphs that most if not all children
+            survived<br /><br />
+            They put children and women first. Making sure the children can have
+            a future and the women can birth more.<br /><br />
             In the code there is a short description of each visual.<br />
-            The final visual is my favorite and can tell us the most about the data.<br />
+            The final visual is my favorite and can tell us the most about the
+            data.<br />
 
             <p class="projects-sub-description" id="projects-sub-description">
-                To learn more on the Titanic click <a class="here"
-                    href="https://www.britannica.com/topic/Titanic">Here</a>
+                To learn more on the Titanic click
+                <a class="here" href="https://www.britannica.com/topic/Titanic"
+                    >Here</a
+                >
             </p>
             <div class="projects-sub-label-data">Data</div>
             <p class="projects-sub-data" id="projects-sub-data">
@@ -208,33 +225,33 @@
                     library(dplyr)<br /><br />
 
                     titanic <- titanic_train %>%<br />
-                        select(Survived, Pclass, Sex, Age, SibSp, Parch, Fare) %>%<br />
-                        mutate(Survived = factor(Survived),<br />
-                        Pclass = factor(Pclass),<br />
-                        Sex = factor(Sex))<br /><br />
+                    select(Survived, Pclass, Sex, Age, SibSp, Parch, Fare)
+                    %>%<br />
+                    mutate(Survived = factor(Survived),<br />
+                    Pclass = factor(Pclass),<br />
+                    Sex = factor(Sex))<br /><br />
 
-                        # plot 1 - survival filled by sex with position_dodge<br />
-                        titanic %>%<br />
-                        ggplot(aes(Survived, fill = Sex)) +<br />
-                        geom_bar(position = position_dodge())<br /><br />
+                    # plot 1 - survival filled by sex with position_dodge<br />
+                    titanic %>%<br />
+                    ggplot(aes(Survived, fill = Sex)) +<br />
+                    geom_bar(position = position_dodge())<br /><br />
 
-                        #plot 2 - sex filled by survival<br />
-                        titanic %>%<br />
-                        ggplot(aes(Sex, fill = Survived)) +<br />
-                        geom_bar()<br /><br />
+                    #plot 2 - sex filled by survival<br />
+                    titanic %>%<br />
+                    ggplot(aes(Sex, fill = Survived)) +<br />
+                    geom_bar()<br /><br />
 
-                        #plot 3 - plcass filled by survival with position_fill<br />
-                        titanic %>%<br />
-                        ggplot(aes(Pclass, fill = Survived)) +<br />
-                        geom_bar(position = position_fill()) +<br />
-                        ylab("Proportion")<br /><br />
+                    #plot 3 - plcass filled by survival with position_fill<br />
+                    titanic %>%<br />
+                    ggplot(aes(Pclass, fill = Survived)) +<br />
+                    geom_bar(position = position_fill()) +<br />
+                    ylab("Proportion")<br /><br />
 
-                        #plot 4 - survival based on sex, class, and age<br />
-                        titanic %>%<br />
-                        ggplot(aes(Age, y = ..count.., fill = Survived)) +<br />
-                        geom_density(alpha = 0.2) +<br />
-                        facet_grid(Sex ~ Pclass)<br /><br />
-
+                    #plot 4 - survival based on sex, class, and age<br />
+                    titanic %>%<br />
+                    ggplot(aes(Age, y = ..count.., fill = Survived)) +<br />
+                    geom_density(alpha = 0.2) +<br />
+                    facet_grid(Sex ~ Pclass)<br /><br />
                 </code>
             </p>
             <div class="projects-sub-label-visual">
@@ -250,9 +267,10 @@
         <footer>
             <p>
                 Created by
-                <a href="https://www.landryhouston.com" target="_blank">Landry Houston <i class="fab fa-python"></i></a>
+                <a href="https://www.landryhouston.com" target="_blank"
+                    >Landry Houston <i class="fab fa-python"></i
+                ></a>
             </p>
         </footer>
     </body>
-
 </html>
