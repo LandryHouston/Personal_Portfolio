@@ -213,7 +213,6 @@ a {
     margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
 }
 
 @media (max-width: 28.75em) {
@@ -254,7 +253,8 @@ td {
     margin-bottom: 4em;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    max-width: 750px;
+    display: block;
 }
 
 footer {
