@@ -4,22 +4,13 @@
     <meta name="theme-color" content="black" />
 
     <head>
-        <link rel="stylesheet" href=" \styles/stars_styles.css" />
+        <link rel="stylesheet" href=" \styles/temp_carbon_styles.css" />
         <link rel="icon" href="logo.png" />
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-            crossorigin="anonymous"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-            rel="stylesheet"
-        />
+            crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
     </head>
 
     <body>
@@ -37,6 +28,7 @@
                         <li><a href="/stars\stars.html">Stars</a></li>
                         <li><a href="/titanic\titanic.html">Titanic</a></li>
                         <li><a href="/murders\murders.html">Murders</a></li>
+                        <li><a href="/temp_carbon\temp_carbon.html">Temp / Carbon</a></li>
                     </ul>
                 </li>
                 <li>
@@ -84,12 +76,9 @@
             In the code there is a short description of each visual.<br />
             The final visual is my favorite and can tell us the most about the
             data.<br />
-
             <p class="projects-sub-description" id="projects-sub-description">
-                To learn more on the Titanic click
-                <a class="here" href="https://www.britannica.com/topic/Titanic"
-                    >Here</a
-                >
+                To learn more on the Titanic click <a class="here"
+                    href="https://www.britannica.com/topic/Titanic">Here</a>
             </p>
             <div class="projects-sub-label-data">Data</div>
             <p class="projects-sub-data" id="projects-sub-data">
@@ -207,13 +196,14 @@
                     <td>30.0708</td>
                 </tr>
             </table>
+
             <p>
                 View the full dataset
                 <a class="here" href="titanic.pdf" target="_blank">Here</a>
             </p>
             <p>
                 <br />Download the full dataset
-                <a class="here" href="titanic.csv" target="_blank">Here</a>
+                <a class="here" href="titanic.csv">Here</a>
             </p>
             <div class="projects-sub-label-code">Code</div>
             <p class="projects-sub-code" id="projects-sub-code">
@@ -225,33 +215,33 @@
                     library(dplyr)<br /><br />
 
                     titanic <- titanic_train %>%<br />
-                    select(Survived, Pclass, Sex, Age, SibSp, Parch, Fare)
-                    %>%<br />
-                    mutate(Survived = factor(Survived),<br />
-                    Pclass = factor(Pclass),<br />
-                    Sex = factor(Sex))<br /><br />
+                        select(Survived, Pclass, Sex, Age, SibSp, Parch, Fare)
+                        %>%<br />
+                        mutate(Survived = factor(Survived),<br />
+                        Pclass = factor(Pclass),<br />
+                        Sex = factor(Sex))<br /><br />
 
-                    # plot 1 - survival filled by sex with position_dodge<br />
-                    titanic %>%<br />
-                    ggplot(aes(Survived, fill = Sex)) +<br />
-                    geom_bar(position = position_dodge())<br /><br />
+                        # plot 1 - survival filled by sex with position_dodge<br />
+                        titanic %>%<br />
+                        ggplot(aes(Survived, fill = Sex)) +<br />
+                        geom_bar(position = position_dodge())<br /><br />
 
-                    #plot 2 - sex filled by survival<br />
-                    titanic %>%<br />
-                    ggplot(aes(Sex, fill = Survived)) +<br />
-                    geom_bar()<br /><br />
+                        #plot 2 - sex filled by survival<br />
+                        titanic %>%<br />
+                        ggplot(aes(Sex, fill = Survived)) +<br />
+                        geom_bar()<br /><br />
 
-                    #plot 3 - plcass filled by survival with position_fill<br />
-                    titanic %>%<br />
-                    ggplot(aes(Pclass, fill = Survived)) +<br />
-                    geom_bar(position = position_fill()) +<br />
-                    ylab("Proportion")<br /><br />
+                        #plot 3 - plcass filled by survival with position_fill<br />
+                        titanic %>%<br />
+                        ggplot(aes(Pclass, fill = Survived)) +<br />
+                        geom_bar(position = position_fill()) +<br />
+                        ylab("Proportion")<br /><br />
 
-                    #plot 4 - survival based on sex, class, and age<br />
-                    titanic %>%<br />
-                    ggplot(aes(Age, y = ..count.., fill = Survived)) +<br />
-                    geom_density(alpha = 0.2) +<br />
-                    facet_grid(Sex ~ Pclass)<br /><br />
+                        #plot 4 - survival based on sex, class, and age<br />
+                        titanic %>%<br />
+                        ggplot(aes(Age, y = ..count.., fill = Survived)) +<br />
+                        geom_density(alpha = 0.2) +<br />
+                        facet_grid(Sex ~ Pclass)<br /><br />
                 </code>
             </p>
             <div class="projects-sub-label-visual">
@@ -267,10 +257,9 @@
         <footer>
             <p>
                 Created by
-                <a href="https://www.landryhouston.com" target="_blank"
-                    >Landry Houston <i class="fab fa-python"></i
-                ></a>
+                <a href="https://www.landryhouston.com" target="_blank">Landry Houston <i class="fab fa-python"></i></a>
             </p>
         </footer>
     </body>
+
 </html>
