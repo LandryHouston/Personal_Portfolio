@@ -4,7 +4,7 @@
     <meta name="theme-color" content="black" />
 
     <head>
-        <link rel="stylesheet" href="\styles/-------_styles.css" />
+        <link rel="stylesheet" href="\styles/multilinear_styles.css" />
         <link rel="icon" href="logo.png" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
@@ -59,7 +59,8 @@
                 </ul>
             </nav>
             <div class="projects-sub-label-description">Description</div>
-            Insert Description Here
+            In this project you can visualize and and understand how multilinear Modeling works.<br />
+            This was programmed using Python in Jupyter Notebook.<br /><br />
             <p class="projects-sub-description" id="projects-sub-description">
                 To learn more on Multilinear Modeling click <a class="here" href="">Here</a>
             </p>
@@ -68,7 +69,149 @@
                 Here is a preview of the Data
             </p>
             <table class="dataframe">
-
+                <tr>
+                    <th>Income</th>
+                    <th>Limit</th>
+                    <th>Rating</th>
+                    <th>Cards</th>
+                    <th>Age</th>
+                    <th>Education</th>
+                    <th>Gender</th>
+                    <th>Student</th>
+                    <th>Married</th>
+                    <th>Ethnicity</th>
+                    <th>Balance</th>
+                </tr>
+                <tr>
+                    <td>14.891</td>
+                    <td>3606</td>
+                    <td>283</td>
+                    <td>2</td>
+                    <td>34</td>
+                    <td>11</td>
+                    <td>Male</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Caucasian</td>
+                    <td>333</td>
+                </tr>
+                <tr>
+                    <td>106.025</td>
+                    <td>6645</td>
+                    <td>483</td>
+                    <td>3</td>
+                    <td>82</td>
+                    <td>15</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Asian</td>
+                    <td>903</td>
+                </tr>
+                <tr>
+                    <td>104.593</td>
+                    <td>7075</td>
+                    <td>514</td>
+                    <td>4</td>
+                    <td>71</td>
+                    <td>11</td>
+                    <td>Male</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Asian</td>
+                    <td>580</td>
+                </tr>
+                <tr>
+                    <td>148.924</td>
+                    <td>9504</td>
+                    <td>681</td>
+                    <td>3</td>
+                    <td>36</td>
+                    <td>11</td>
+                    <td>Female</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Asian</td>
+                    <td>964</td>
+                </tr>
+                <tr>
+                    <td>55.882</td>
+                    <td>4897</td>
+                    <td>357</td>
+                    <td>2</td>
+                    <td>68</td>
+                    <td>16</td>
+                    <td>Male</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Caucasian</td>
+                    <td>331</td>
+                </tr>
+                <tr>
+                    <td>80.18</td>
+                    <td>8047</td>
+                    <td>569</td>
+                    <td>4</td>
+                    <td>77</td>
+                    <td>10</td>
+                    <td>Male</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Caucasian</td>
+                    <td>1151</td>
+                </tr>
+                <tr>
+                    <td>20.996</td>
+                    <td>3388</td>
+                    <td>259</td>
+                    <td>2</td>
+                    <td>37</td>
+                    <td>12</td>
+                    <td>Female</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>African American</td>
+                    <td>203</td>
+                </tr>
+                <tr>
+                    <td>71.408</td>
+                    <td>7114</td>
+                    <td>512</td>
+                    <td>2</td>
+                    <td>87</td>
+                    <td>9</td>
+                    <td>Male</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Asian</td>
+                    <td>872</td>
+                </tr>
+                <tr>
+                    <td>15.125</td>
+                    <td>3300</td>
+                    <td>266</td>
+                    <td>5</td>
+                    <td>66</td>
+                    <td>13</td>
+                    <td>Female</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Caucasian</td>
+                    <td>279</td>
+                </tr>
+                <tr>
+                    <td>71.061</td>
+                    <td>6819</td>
+                    <td>491</td>
+                    <td>3</td>
+                    <td>41</td>
+                    <td>19</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>African American</td>
+                    <td>1350</td>
+                </tr>
             </table>
 
             <p>
@@ -82,7 +225,57 @@
             <div class="projects-sub-label-code">Code</div>
             <p class="projects-sub-code" id="projects-sub-code">
                 <code>
+                    import numpy as np<br />
+                    import pandas as pd<br />
+                    import seaborn as sns<br />
+                    import matplotlib.pyplot as plt<br />
+                    from sklearn.metrics import mean_squared_error<br />
+                    from sklearn.linear_model import LinearRegression<br />
+                    from sklearn.model_selection import train_test_split<br /><br />
 
+                    df = pd.read_csv("credit.csv")<br /><br />
+
+                    x = df.drop("Balance", axis=1)<br />
+                    y = df["Balance"]<br />
+                    x_train, x_test, y_train, y_test = train_test_split(<br />
+                    x, y, test_size=0.2, random_state=42<br />
+                    )<br /><br />
+
+                    x_train_design = pd.get_dummies(x_train, drop_first=True)<br />
+                    x_test_design = pd.get_dummies(x_test, drop_first=True)<br /><br />
+
+                    model2 = LinearRegression().fit(x_train_design, y_train)<br /><br />
+
+                    train_score = model2.score(x_train_design, y_train)<br />
+                    test_score = model2.score(x_test_design, y_test)<br />
+                    print("Train R2:", train_score)<br />
+                    print("Test R2:", test_score)<br /><br />
+
+                    best_cat_feature = "Student_Yes"<br /><br />
+
+                    features = ["Income", best_cat_feature]<br />
+                    model3 = LinearRegression()<br />
+                    model3.fit(x_train_design[features], y_train)<br /><br />
+
+                    beta0 = model3.intercept_<br />
+                    beta1 = model3.coef_[features.index("Income")]<br />
+                    beta2 = model3.coef_[features.index(best_cat_feature)]<br /><br />
+
+                    x_space = np.linspace(x["Income"].min(), x["Income"].max(), 1000)<br /><br />
+
+                    y_hat_yes = beta0 + beta1 * x_space + 1 * beta2<br />
+                    y_hat_no = beta0 + beta1 * x_space + 0 * beta2<br /><br />
+
+                    plt.rcParams['figure.figsize'] = [10, 10]<br />
+                    ax = sns.scatterplot(<br />
+                    data=pd.concat([x_train_design, y_train], axis=1),<br />
+                    x="Income",<br />
+                    y="Balance",<br />
+                    hue=best_cat_feature,<br />
+                    alpha=0.8,<br />
+                    )<br />
+                    ax.plot(x_space, y_hat_yes)<br />
+                    ax.plot(x_space, y_hat_no);<br />
                 </code>
             </p>
             <div class="projects-sub-label-visual">
