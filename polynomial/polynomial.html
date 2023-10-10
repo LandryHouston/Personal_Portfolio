@@ -4,7 +4,7 @@
     <meta name="theme-color" content="black" />
 
     <head>
-        <link rel="stylesheet" href="\styles/k-NN_styles.css" />
+        <link rel="stylesheet" href="\styles/polynomial_styles.css" />
         <link rel="icon" href="logo.png" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
@@ -40,7 +40,7 @@
             </ul>
         </nav>
         <section id="stars" class="projects-section">
-            <h2 class="projects-sub-header">k-NN Regression</h2>
+            <h2 class="projects-sub-header">Linear & Polynomial Regression</h2>
             <nav id="project_navbar" class="project_nav">
                 <ul class="project_nav-list">
                     <li>
@@ -59,13 +59,11 @@
                 </ul>
             </nav>
             <div class="projects-sub-label-description">Description</div>
-            In this project you can visualize and and understand how k-NN Regression works.<br />
+            In this project you can visualize and and understand how Linear & Polynomial Regression works.<br />
             This was programmed using Python in Jupyter Notebook.<br /><br />
-
-
             <p class="projects-sub-description" id="projects-sub-description">
-                To learn more on k-NN Regression click <a class="here"
-                    href="https://www.javatpoint.com/k-nearest-neighbor-algorithm-for-machine-learning">Here</a>
+                To learn more on Linear & Polynomial Regression click <a class="here"
+                    href="https://towardsdatascience.com/introduction-to-linear-regression-and-polynomial-regression-f8adc96f31cb">Here</a>
             </p>
             <div class="projects-sub-label-data">Data</div>
             <p class="projects-sub-data" id="projects-sub-data">
@@ -73,80 +71,58 @@
             </p>
             <table class="dataframe">
                 <tr>
-                    <th>TV</th>
-                    <th>Radio</th>
-                    <td>Newspaper</th>
-                    <th>Sales</th>
+                    <th>x</th>
+                    <th>y</th>
                 </tr>
                 <tr>
-                    <td>230.1</td>
-                    <td>37.8</td>
-                    <td>69.2</td>
-                    <td>22.1</td>
+                    <td>-3.2921570379029923</td>
+                    <td>-46.91698793375531</td>
                 </tr>
                 <tr>
-                    <td>44.5</td>
-                    <td>39.3</td>
-                    <td>45.1</td>
-                    <td>10.4</td>
+                    <td>0.7995283748983302</td>
+                    <td>-3.94155289559835</td>
                 </tr>
                 <tr>
-                    <td>17.2</td>
-                    <td>45.9</td>
-                    <td>69.3</td>
-                    <td>9.3</td>
+                    <td>-0.9362139523172175</td>
+                    <td>-2.800522450110517</td>
                 </tr>
                 <tr>
-                    <td>151.5</td>
-                    <td>41.3</td>
-                    <td>58.5</td>
-                    <td>18.5</td>
+                    <td>-4.722679597604373</td>
+                    <td>-103.0309141353405</td>
                 </tr>
                 <tr>
-                    <td>180.8</td>
-                    <td>10.8</td>
-                    <td>58.4</td>
-                    <td>12.9</td>
+                    <td>-3.602673970449903</td>
+                    <td>-54.0208194726144</td>
                 </tr>
                 <tr>
-                    <td>8.7</td>
-                    <td>48.9</td>
-                    <td>75.0</td>
-                    <td>7.2</td>
+                    <td>4.931833639629233</td>
+                    <td>8.413452417281633</td>
                 </tr>
                 <tr>
-                    <td>57.5</td>
-                    <td>32.8</td>
-                    <td>23.5</td>
-                    <td>11.8</td>
+                    <td>-0.8502652525767682</td>
+                    <td>-5.6764956824494845</td>
                 </tr>
                 <tr>
-                    <td>120.2</td>
-                    <td>19.6</td>
-                    <td>11.6</td>
-                    <td>13.2</td>
+                    <td>2.4540716248930936</td>
+                    <td>-7.415172831928608</td>
                 </tr>
                 <tr>
-                    <td>8.6</td>
-                    <td>2.1</td>
-                    <td>1.0</td>
-                    <td>4.8</td>
+                    <td>2.3096565553806734</td>
+                    <td>-4.359149528674159</td>
                 </tr>
                 <tr>
-                    <td>199.8</td>
-                    <td>2.6</td>
-                    <td>21.2</td>
-                    <td>10.6</td>
+                    <td>0.7682044941848831</td>
+                    <td>-3.4798495769700746</td>
                 </tr>
             </table>
 
             <p>
                 View the full dataset
-                <a class="here" href="Advertising.pdf" target="_blank">Here</a>
+                <a class="here" href="poly.pdf" target="_blank">Here</a>
             </p>
             <p>
                 <br />Download the full dataset
-                <a class="here" href="Advertising.csv">Here</a>
+                <a class="here" href="poly.csv">Here</a>
             </p>
             <div class="projects-sub-label-code">Code</div>
             <p class="projects-sub-code" id="projects-sub-code">
@@ -154,58 +130,46 @@
                     import numpy as np<br />
                     import pandas as pd<br />
                     import matplotlib.pyplot as plt<br />
-                    from sklearn.neighbors import KNeighborsRegressor<br />
-                    from sklearn.model_selection import train_test_split<br /><br />
-
+                    from sklearn.linear_model import LinearRegression<br />
+                    from sklearn.preprocessing import PolynomialFeatures<br />
                     %matplotlib inline<br /><br />
 
-                    data_filename = "Advertising.csv"<br />
-                    df = pd.read_csv(data_filename)<br /><br />
+                    df = pd.read_csv('poly.csv')<br />
+                    x = df[['x']].values<br />
+                    y = df['y'].values<br /><br />
 
-                    x = df[["TV"]]<br />
-                    y = df[["Sales"]]<br /><br />
+                    model = LinearRegression()<br />
+                    model.fit(x,y)<br /><br />
 
-                    x_train, x_test, y_train, y_test = train_test_split(<br />
-                    x, y, train_size=0.6, random_state=42<br />
-                    )<br /><br />
+                    y_lin_pred = model.predict(x)<br /><br />
 
-                    k_value_min = 1<br /><br />
+                    guess_degree = 3<br /><br />
 
-                    k_value_max = 70<br /><br />
+                    x_poly= PolynomialFeatures(degree=guess_degree).fit_transform(x)<br /><br />
 
-                    k_list = np.linspace(k_value_min, k_value_max, 70)<br /><br />
+                    polymodel = LinearRegression(fit_intercept=False)<br />
+                    polymodel.fit(x_poly,y)<br /><br />
 
-                    fig, ax = plt.subplots(figsize=(10, 6))<br /><br />
+                    y_poly_pred = polymodel.predict(x_poly)<br /><br />
 
-                    j = 0<br /><br />
+                    x_l = np.linspace(np.min(x),np.max(x),100).reshape(-1, 1)<br /><br />
 
-                    for k_value in k_list:<br /><br />
+                    y_lin_pred_l = model.predict(x_l)<br /><br />
 
-                    model = KNeighborsRegressor(n_neighbors=int(k_value))<br />
-                    model.fit(x_train, y_train)<br /><br />
+                    x_poly_l= PolynomialFeatures(degree=guess_degree).fit_transform(x_l)<br /><br />
 
-                    y_pred = model.predict(x_test)<br /><br />
+                    y_poly_pred_l = polymodel.predict(x_poly_l)<br /><br />
 
-                    colors = ["grey", "r", "b"]<br />
-                    if k_value in [1, 10, 70]:<br />
-                    xvals = np.linspace(x.min(), x.max(), 100)<br />
-                    ypreds = model.predict(xvals)<br />
-                    ax.plot(<br />
-                    xvals,<br />
-                    ypreds,<br />
-                    "-",<br />
-                    label=f"k = {int(k_value)}",<br />
-                    linewidth=j + 2,<br />
-                    color=colors[j],<br />
-                    )<br />
-                    j += 1<br /><br />
+                    plt.scatter(x, y, s=10, label="Data")<br />
+                    plt.rcParams['figure.figsize'] = [10, 10]<br />
+                    plt.plot(x,y_lin_pred,label="Linear fit")<br /><br />
 
-                    ax.legend(loc="lower right", fontsize=20)<br />
-                    ax.plot(x_train, y_train, "x", label="train", color="k")<br />
-                    ax.set_xlabel("TV budget in $1000", fontsize=20)<br />
-                    ax.set_ylabel("Sales in $1000", fontsize=20)<br />
-                    plt.xlim([0, 300])<br />
-                    plt.tight_layout()<br />
+                    plt.plot(x_l,y_poly_pred_l, label="Polynomial fit")<br /><br />
+
+                    plt.xlabel("x values")<br />
+                    plt.ylabel("y values")<br />
+                    plt.legend()<br />
+                    plt.show()<br />
                 </code>
             </p>
             <div class="projects-sub-label-visual">
@@ -213,7 +177,7 @@
                     Visuals
                 </p>
             </div>
-            <img class="image" src="k-NN_plot.png" />
+            <img class="image" src="polynomial_plot.png" />
         </section>
         <footer>
             <p>
