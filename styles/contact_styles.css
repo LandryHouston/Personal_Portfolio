@@ -40,6 +40,11 @@ html {
     }
 }
 
+@media (max-width: 1024px) {
+    body {
+        font-size: 1.6rem;
+    }
+}
 @media (max-width: 61.25em) {
     html {
         font-size: 58%;
@@ -169,13 +174,13 @@ footer i {
     vertical-align: middle;
 }
 
-@media (max-width: 70em) {
+@media (max-width: 1024px) {
     footer {
         margin-top: 30em;
     }
 }
 
-@media (max-width: 70em) {
+@media (max-width: 1024px) {
     h2 {
         margin-top: 5em;
         margin-bottom: -1em;
