@@ -157,6 +157,8 @@ a {
 .project {
     background: #080808;
     border-radius: 2px;
+    max-width: 750px;
+    margin: 0 auto;
 }
 
 .code {
@@ -169,9 +171,10 @@ a {
 }
 
 .project-image {
-    height: calc(100% - 6.8rem);
+    max-width: 750px;
+    max-height: 750px;
     width: 100%;
-    object-fit: cover;
+    height: auto;
 }
 
 .project-title {
