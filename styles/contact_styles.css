@@ -34,29 +34,6 @@ html {
     scroll-behavior: smooth;
 }
 
-@media (max-width: 75em) {
-    html {
-        font-size: 60%;
-    }
-}
-
-@media (max-width: 1024px) {
-    body {
-        font-size: 1.6rem;
-    }
-}
-@media (max-width: 61.25em) {
-    html {
-        font-size: 58%;
-    }
-}
-
-@media (max-width: 28.75em) {
-    html {
-        font-size: 55%;
-    }
-}
-
 body {
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem; /* 18px */
@@ -172,33 +149,4 @@ footer > p {
 
 footer i {
     vertical-align: middle;
-}
-
-@media (max-width: 70em) {
-    footer {
-        margin-top: 30em;
-    }
-}
-
-@media (max-width: 70em) {
-    h2 {
-        margin-top: 5em;
-        margin-bottom: -1em;
-    }
-    p {
-        margin-bottom: -3em;
-    }
-}
-
-@media (max-width: 1024px) {
-    footer {
-        margin-top: 30em;
-    }
-}
-
-@media (max-width: 1024px) {
-    h2 {
-        margin-top: 5em;
-        margin-bottom: -1em;
-    }
 }
