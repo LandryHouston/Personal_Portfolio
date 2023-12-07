@@ -42,15 +42,30 @@ html {
     }
 }
 
-@media (max-width: 61.25em) {
+@media (max-width: 70em) {
     html {
-        font-size: 58%;
+        font-size: 55%;
     }
 }
 
-@media (max-width: 28.75em) {
+@media (max-width: 65em) {
     html {
-        font-size: 55%;
+        font-size: 50%;
+    }
+}
+@media (max-width: 60em) {
+    html {
+        font-size: 45%;
+    }
+}
+@media (max-width: 55em) {
+    html {
+        font-size: 40%;
+    }
+}
+@media (max-width: 50em) {
+    html {
+        font-size: 35%;
     }
 }
 
@@ -90,16 +105,6 @@ a {
     display: flex;
 }
 
-@media (max-width: 28.75em) {
-    .nav {
-        justify-content: center;
-    }
-
-    .nav-list {
-        margin: 0 5rem;
-    }
-}
-
 .nav-list a {
     display: block;
     font-size: 2.4rem;
@@ -135,16 +140,6 @@ a {
 .project_nav-list {
     display: flex;
     margin-bottom: 4rem;
-}
-
-@media (max-width: 28.75em) {
-    .project_nav {
-        justify-content: center;
-    }
-
-    .project_nav-list {
-        margin: 0 5rem;
-    }
 }
 
 .project_nav-list a {
@@ -214,18 +209,6 @@ a {
     display: inline-block;
 }
 
-@media (max-width: 28.75em) {
-    .projects-sub-header {
-        font-size: 4rem;
-    }
-}
-
-@media (max-width: 30.625em) {
-    .projects-section {
-        padding: 6rem 1rem;
-    }
-}
-
 .here {
     border-bottom: solid 1px white;
     position: relative;
@@ -270,10 +253,4 @@ footer > p {
 
 footer i {
     vertical-align: middle;
-}
-
-@media (max-width: 28.75em) {
-    footer {
-        flex-direction: column;
-    }
 }
