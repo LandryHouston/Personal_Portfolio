@@ -1,231 +1,230 @@
 <!DOCTYPE html>
 <html>
-    <title>Landry Houston Work</title>
-    <meta name="theme-color" content="#080808" />
+<title>Landry Houston Work</title>
+<meta name="theme-color" content="#080808" />
 
-    <head>
-        <link rel="stylesheet" href="\styles/multilinear_styles.css" />
-        <link rel="icon" href="logo.png" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-            crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
-    </head>
+<head>
+    <link rel="stylesheet" href="\styles/multilinear_styles.css" />
+    <link rel="icon" href="styles/logo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+</head>
 
-    <body>
-        <nav id="navbar" class="nav">
-            <ul class="nav-list">
+<body>
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/about\about.html">About</a>
+            </li>
+            <li>
+                <a href="/work\work.html">Work</a>
+                <ul>
+                    <li><a href="/stars\stars.html">Stars</a></li>
+                    <li><a href="/titanic\titanic.html">Titanic</a></li>
+                    <li><a href="/murders\murders.html">Murders</a></li>
+                    <li><a href="/emissions\emissions.html">Emissions</a></li>
+                    <li><a href="/k-NN\k-NN.html">K-Nearest Neighbors</a></li>
+                    <li><a href="/polynomial\polynomial.html">Linear & Polynomial Regression</a></li>
+                    <li><a href="/multilinear\multilinear.html">Multilinear Regression</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/contact\contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="stars" class="projects-section">
+        <h2 class="projects-sub-header">Multilinear Regression</h2>
+        <nav id="project_navbar" class="project_nav">
+            <ul class="project_nav-list">
                 <li>
-                    <a href="/index.html">Home</a>
+                    <a href="#projects-sub-description">Description</a>
                 </li>
                 <li>
-                    <a href="/about\about.html">About</a>
+                    <a href="#projects-sub-data">Data</a>
                 </li>
                 <li>
-                    <a href="/work\work.html">Work</a>
-                    <ul>
-                        <li><a href="/stars\stars.html">Stars</a></li>
-                        <li><a href="/titanic\titanic.html">Titanic</a></li>
-                        <li><a href="/murders\murders.html">Murders</a></li>
-                        <li><a href="/emissions\emissions.html">Emissions</a></li>
-                        <li><a href="/k-NN\k-NN.html">K-Nearest Neighbors</a></li>
-                        <li><a href="/polynomial\polynomial.html">Linear & Polynomial Regression</a></li>
-                        <li><a href="/multilinear\multilinear.html">Multilinear Regression</a></li>
-                    </ul>
+                    <a href="#projects-sub-code">Code</a>
                 </li>
+
                 <li>
-                    <a href="/contact\contact.html">Contact</a>
+                    <a href="#projects-sub-visual">Visuals</a>
                 </li>
             </ul>
         </nav>
-        <section id="stars" class="projects-section">
-            <h2 class="projects-sub-header">Multilinear Regression</h2>
-            <nav id="project_navbar" class="project_nav">
-                <ul class="project_nav-list">
-                    <li>
-                        <a href="#projects-sub-description">Description</a>
-                    </li>
-                    <li>
-                        <a href="#projects-sub-data">Data</a>
-                    </li>
-                    <li>
-                        <a href="#projects-sub-code">Code</a>
-                    </li>
+        <div class="projects-sub-label-description">Description</div>
+        In this project you can visualize and understand how Multilinear Regression works.<br />
+        This was programmed using Python in Jupyter Notebook.<br /><br />
+        <p class="projects-sub-description" id="projects-sub-description">
+            To learn more on Multilinear Modeling click <a class="here"
+                href="https://towardsdatascience.com/multiple-linear-regression-theory-and-applications-677ec2cd04ac">Here</a>
+        </p>
+        <div class="projects-sub-label-data">Data</div>
+        <p class="projects-sub-data" id="projects-sub-data">
+            Here is a preview of the Data
+        </p>
+        <table class="dataframe">
+            <tr>
+                <th>Income</th>
+                <th>Limit</th>
+                <th>Rating</th>
+                <th>Cards</th>
+                <th>Age</th>
+                <th>Education</th>
+                <th>Gender</th>
+                <th>Student</th>
+                <th>Married</th>
+                <th>Ethnicity</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <td>14.891</td>
+                <td>3606</td>
+                <td>283</td>
+                <td>2</td>
+                <td>34</td>
+                <td>11</td>
+                <td>Male</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Caucasian</td>
+                <td>333</td>
+            </tr>
+            <tr>
+                <td>106.025</td>
+                <td>6645</td>
+                <td>483</td>
+                <td>3</td>
+                <td>82</td>
+                <td>15</td>
+                <td>Female</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Asian</td>
+                <td>903</td>
+            </tr>
+            <tr>
+                <td>104.593</td>
+                <td>7075</td>
+                <td>514</td>
+                <td>4</td>
+                <td>71</td>
+                <td>11</td>
+                <td>Male</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Asian</td>
+                <td>580</td>
+            </tr>
+            <tr>
+                <td>148.924</td>
+                <td>9504</td>
+                <td>681</td>
+                <td>3</td>
+                <td>36</td>
+                <td>11</td>
+                <td>Female</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Asian</td>
+                <td>964</td>
+            </tr>
+            <tr>
+                <td>55.882</td>
+                <td>4897</td>
+                <td>357</td>
+                <td>2</td>
+                <td>68</td>
+                <td>16</td>
+                <td>Male</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Caucasian</td>
+                <td>331</td>
+            </tr>
+            <tr>
+                <td>80.18</td>
+                <td>8047</td>
+                <td>569</td>
+                <td>4</td>
+                <td>77</td>
+                <td>10</td>
+                <td>Male</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Caucasian</td>
+                <td>1151</td>
+            </tr>
+            <tr>
+                <td>20.996</td>
+                <td>3388</td>
+                <td>259</td>
+                <td>2</td>
+                <td>37</td>
+                <td>12</td>
+                <td>Female</td>
+                <td>No</td>
+                <td>No</td>
+                <td>African American</td>
+                <td>203</td>
+            </tr>
+            <tr>
+                <td>71.408</td>
+                <td>7114</td>
+                <td>512</td>
+                <td>2</td>
+                <td>87</td>
+                <td>9</td>
+                <td>Male</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Asian</td>
+                <td>872</td>
+            </tr>
+            <tr>
+                <td>15.125</td>
+                <td>3300</td>
+                <td>266</td>
+                <td>5</td>
+                <td>66</td>
+                <td>13</td>
+                <td>Female</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Caucasian</td>
+                <td>279</td>
+            </tr>
+            <tr>
+                <td>71.061</td>
+                <td>6819</td>
+                <td>491</td>
+                <td>3</td>
+                <td>41</td>
+                <td>19</td>
+                <td>Female</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>African American</td>
+                <td>1350</td>
+            </tr>
+        </table>
 
-                    <li>
-                        <a href="#projects-sub-visual">Visuals</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="projects-sub-label-description">Description</div>
-            In this project you can visualize and understand how Multilinear Regression works.<br />
-            This was programmed using Python in Jupyter Notebook.<br /><br />
-            <p class="projects-sub-description" id="projects-sub-description">
-                To learn more on Multilinear Modeling click <a class="here"
-                    href="https://towardsdatascience.com/multiple-linear-regression-theory-and-applications-677ec2cd04ac">Here</a>
-            </p>
-            <div class="projects-sub-label-data">Data</div>
-            <p class="projects-sub-data" id="projects-sub-data">
-                Here is a preview of the Data
-            </p>
-            <table class="dataframe">
-                <tr>
-                    <th>Income</th>
-                    <th>Limit</th>
-                    <th>Rating</th>
-                    <th>Cards</th>
-                    <th>Age</th>
-                    <th>Education</th>
-                    <th>Gender</th>
-                    <th>Student</th>
-                    <th>Married</th>
-                    <th>Ethnicity</th>
-                    <th>Balance</th>
-                </tr>
-                <tr>
-                    <td>14.891</td>
-                    <td>3606</td>
-                    <td>283</td>
-                    <td>2</td>
-                    <td>34</td>
-                    <td>11</td>
-                    <td>Male</td>
-                    <td>No</td>
-                    <td>Yes</td>
-                    <td>Caucasian</td>
-                    <td>333</td>
-                </tr>
-                <tr>
-                    <td>106.025</td>
-                    <td>6645</td>
-                    <td>483</td>
-                    <td>3</td>
-                    <td>82</td>
-                    <td>15</td>
-                    <td>Female</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Asian</td>
-                    <td>903</td>
-                </tr>
-                <tr>
-                    <td>104.593</td>
-                    <td>7075</td>
-                    <td>514</td>
-                    <td>4</td>
-                    <td>71</td>
-                    <td>11</td>
-                    <td>Male</td>
-                    <td>No</td>
-                    <td>No</td>
-                    <td>Asian</td>
-                    <td>580</td>
-                </tr>
-                <tr>
-                    <td>148.924</td>
-                    <td>9504</td>
-                    <td>681</td>
-                    <td>3</td>
-                    <td>36</td>
-                    <td>11</td>
-                    <td>Female</td>
-                    <td>No</td>
-                    <td>No</td>
-                    <td>Asian</td>
-                    <td>964</td>
-                </tr>
-                <tr>
-                    <td>55.882</td>
-                    <td>4897</td>
-                    <td>357</td>
-                    <td>2</td>
-                    <td>68</td>
-                    <td>16</td>
-                    <td>Male</td>
-                    <td>No</td>
-                    <td>Yes</td>
-                    <td>Caucasian</td>
-                    <td>331</td>
-                </tr>
-                <tr>
-                    <td>80.18</td>
-                    <td>8047</td>
-                    <td>569</td>
-                    <td>4</td>
-                    <td>77</td>
-                    <td>10</td>
-                    <td>Male</td>
-                    <td>No</td>
-                    <td>No</td>
-                    <td>Caucasian</td>
-                    <td>1151</td>
-                </tr>
-                <tr>
-                    <td>20.996</td>
-                    <td>3388</td>
-                    <td>259</td>
-                    <td>2</td>
-                    <td>37</td>
-                    <td>12</td>
-                    <td>Female</td>
-                    <td>No</td>
-                    <td>No</td>
-                    <td>African American</td>
-                    <td>203</td>
-                </tr>
-                <tr>
-                    <td>71.408</td>
-                    <td>7114</td>
-                    <td>512</td>
-                    <td>2</td>
-                    <td>87</td>
-                    <td>9</td>
-                    <td>Male</td>
-                    <td>No</td>
-                    <td>No</td>
-                    <td>Asian</td>
-                    <td>872</td>
-                </tr>
-                <tr>
-                    <td>15.125</td>
-                    <td>3300</td>
-                    <td>266</td>
-                    <td>5</td>
-                    <td>66</td>
-                    <td>13</td>
-                    <td>Female</td>
-                    <td>No</td>
-                    <td>No</td>
-                    <td>Caucasian</td>
-                    <td>279</td>
-                </tr>
-                <tr>
-                    <td>71.061</td>
-                    <td>6819</td>
-                    <td>491</td>
-                    <td>3</td>
-                    <td>41</td>
-                    <td>19</td>
-                    <td>Female</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>African American</td>
-                    <td>1350</td>
-                </tr>
-            </table>
-
-            <p>
-                View the full dataset
-                <a class="here" href="credit.pdf" target="_blank">Here</a>
-            </p>
-            <p>
-                <br />Download the full dataset
-                <a class="here" href="credit.csv">Here</a>
-            </p>
-            <div class="projects-sub-label-code">Code</div>
-            <p class="projects-sub-code" id="projects-sub-code">
-                <code>
+        <p>
+            View the full dataset
+            <a class="here" href="credit.pdf" target="_blank">Here</a>
+        </p>
+        <p>
+            <br />Download the full dataset
+            <a class="here" href="credit.csv">Here</a>
+        </p>
+        <div class="projects-sub-label-code">Code</div>
+        <p class="projects-sub-code" id="projects-sub-code">
+            <code>
                     import numpy as np<br />
                     import pandas as pd<br />
                     import seaborn as sns<br />
@@ -278,20 +277,20 @@
                     ax.plot(x_space, y_hat_yes)<br />
                     ax.plot(x_space, y_hat_no);<br />
                 </code>
+        </p>
+        <div class="projects-sub-label-visual">
+            <p class="projects-sub-visual" id="projects-sub-visual">
+                Visuals
             </p>
-            <div class="projects-sub-label-visual">
-                <p class="projects-sub-visual" id="projects-sub-visual">
-                    Visuals
-                </p>
-            </div>
-            <img class="image" src="multilinear_plot.png" />
-        </section>
-        <footer>
-            <p>
-                Created by
-                <a href="https://www.landryhouston.com" target="_blank">Landry Houston <i class="fab fa-python"></i></a>
-            </p>
-        </footer>
-    </body>
+        </div>
+        <img class="image" src="multilinear_plot.png" />
+    </section>
+    <footer>
+        <p>
+            Created by
+            <a href="https://www.landryhouston.com" target="_blank">Landry Houston <i class="fab fa-python"></i></a>
+        </p>
+    </footer>
+</body>
 
 </html>

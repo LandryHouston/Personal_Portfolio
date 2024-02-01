@@ -1,182 +1,181 @@
 <!DOCTYPE html>
 <html>
-    <title>Landry Houston Work</title>
-    <meta name="theme-color" content="#080808" />
+<title>Landry Houston Work</title>
+<meta name="theme-color" content="#080808" />
 
-    <head>
-        <link rel="stylesheet" href=" \styles/murders_styles.css" />
-        <link rel="icon" href="logo.png" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-            crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
-    </head>
+<head>
+    <link rel="stylesheet" href=" \styles/murders_styles.css" />
+    <link rel="icon" href="styles/logo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+</head>
 
-    <body>
-        <nav id="navbar" class="nav">
-            <ul class="nav-list">
+<body>
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/about\about.html">About</a>
+            </li>
+            <li>
+                <a href="/work\work.html">Work</a>
+                <ul>
+                    <li><a href="/stars\stars.html">Stars</a></li>
+                    <li><a href="/titanic\titanic.html">Titanic</a></li>
+                    <li><a href="/murders\murders.html">Murders</a></li>
+                    <li><a href="/emissions\emissions.html">Emissions</a></li>
+                    <li><a href="/k-NN\k-NN.html">K-Nearest Neighbors</a></li>
+                    <li><a href="/polynomial\polynomial.html">Linear & Polynomial Regression</a></li>
+                    <li><a href="/multilinear\multilinear.html">Multilinear Regression</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/contact\contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="stars" class="projects-section">
+        <h2 class="projects-sub-header">Murders</h2>
+        <nav id="project_navbar" class="project_nav">
+            <ul class="project_nav-list">
                 <li>
-                    <a href="/index.html">Home</a>
+                    <a href="#projects-sub-description">Description</a>
                 </li>
                 <li>
-                    <a href="/about\about.html">About</a>
+                    <a href="#projects-sub-data">Data</a>
                 </li>
                 <li>
-                    <a href="/work\work.html">Work</a>
-                    <ul>
-                        <li><a href="/stars\stars.html">Stars</a></li>
-                        <li><a href="/titanic\titanic.html">Titanic</a></li>
-                        <li><a href="/murders\murders.html">Murders</a></li>
-                        <li><a href="/emissions\emissions.html">Emissions</a></li>
-                        <li><a href="/k-NN\k-NN.html">K-Nearest Neighbors</a></li>
-                        <li><a href="/polynomial\polynomial.html">Linear & Polynomial Regression</a></li>
-                        <li><a href="/multilinear\multilinear.html">Multilinear Regression</a></li>
-                    </ul>
+                    <a href="#projects-sub-code">Code</a>
                 </li>
+
                 <li>
-                    <a href="/contact\contact.html">Contact</a>
+                    <a href="#projects-sub-visual">Visuals</a>
                 </li>
             </ul>
         </nav>
-        <section id="stars" class="projects-section">
-            <h2 class="projects-sub-header">Murders</h2>
-            <nav id="project_navbar" class="project_nav">
-                <ul class="project_nav-list">
-                    <li>
-                        <a href="#projects-sub-description">Description</a>
-                    </li>
-                    <li>
-                        <a href="#projects-sub-data">Data</a>
-                    </li>
-                    <li>
-                        <a href="#projects-sub-code">Code</a>
-                    </li>
-
-                    <li>
-                        <a href="#projects-sub-visual">Visuals</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="projects-sub-label-description">Description</div>
-            <p class="projects-sub-description" id="projects-sub-description">
-                In this project you can see the total number of murders based on state and population in the year
-                2010.<br />
-                This was programmed using R in R Studio<br /><br />
-                On the X-axis is Population and on the Y-axis is the Total Number of Murders<br />
-                The legend color codes the states by region.<br /><br />
-                You can see that California has the most murders, however it has the highest population as well.<br />
-                Some of the safest places would be Vermont, North Dakota, or even New Hampshire.<br /><br />
-                Overall the safe states are below the dashed line which dictates the average amount of murders based on
-                the population<br /><br />
-                To learn more on murder statistics click <a class="here"
-                    href="https://www.pewresearch.org/short-reads/2021/10/27/what-we-know-about-the-increase-in-u-s-murders-in-2020/">Here</a>
-            </p>
-            <div class="projects-sub-label-data">Data</div>
-            <p class="projects-sub-data" id="projects-sub-data">
-                Here is a preview of the Data
-            </p>
-            <table class="dataframe">
-                <tr>
-                    <th></th>
-                    <th>State</th>
-                    <th>Abb</th>
-                    <th>Region</th>
-                    <th>Population</th>
-                    <th>Total</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Alabama</td>
-                    <td>AL</td>
-                    <td>South</td>
-                    <td>4779736</td>
-                    <td>135</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Alaska</td>
-                    <td>AK</td>
-                    <td>West</td>
-                    <td>710231</td>
-                    <td>19</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Arizona</td>
-                    <td>AZ</td>
-                    <td>West</td>
-                    <td>6392017</td>
-                    <td>232</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Arkansas</td>
-                    <td>AR</td>
-                    <td>South</td>
-                    <td>2915918</td>
-                    <td>93</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>California</td>
-                    <td>CA</td>
-                    <td>West</td>
-                    <td>37253956</td>
-                    <td>1257</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Colorado</td>
-                    <td>CO</td>
-                    <td>West</td>
-                    <td>5029196</td>
-                    <td>65</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Connecticut</td>
-                    <td>CT</td>
-                    <td>Northeast</td>
-                    <td>3574097</td>
-                    <td>97</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Delaware</td>
-                    <td>DE</td>
-                    <td>South</td>
-                    <td>897934</td>
-                    <td>38</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>District of Columbia</td>
-                    <td>DC</td>
-                    <td>South</td>
-                    <td>601723</td>
-                    <td>99</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Florida</td>
-                    <td>FL</td>
-                    <td>South</td>
-                    <td>19687653</td>
-                    <td>669</td>
-                </tr>
-            </table>
-            <p>
-                View the full dataset
-                <a class="here" href="murders.pdf" target="_blank">Here</a>
-            </p>
-            <p>
-                <br />Download the full dataset
-                <a class="here" href="murders.csv" target="_blank">Here</a>
-            </p>
-            <div class="projects-sub-label-code">Code</div>
-            <p class="projects-sub-code" id="projects-sub-code">
-                <code>
+        <div class="projects-sub-label-description">Description</div>
+        <p class="projects-sub-description" id="projects-sub-description">
+            In this project you can see the total number of murders based on state and population in the year
+            2010.<br />
+            This was programmed using R in R Studio<br /><br />
+            On the X-axis is Population and on the Y-axis is the Total Number of Murders<br />
+            The legend color codes the states by region.<br /><br />
+            You can see that California has the most murders, however it has the highest population as well.<br />
+            Some of the safest places would be Vermont, North Dakota, or even New Hampshire.<br /><br />
+            Overall the safe states are below the dashed line which dictates the average amount of murders based on
+            the population<br /><br />
+            To learn more on murder statistics click <a class="here"
+                href="https://www.pewresearch.org/short-reads/2021/10/27/what-we-know-about-the-increase-in-u-s-murders-in-2020/">Here</a>
+        </p>
+        <div class="projects-sub-label-data">Data</div>
+        <p class="projects-sub-data" id="projects-sub-data">
+            Here is a preview of the Data
+        </p>
+        <table class="dataframe">
+            <tr>
+                <th></th>
+                <th>State</th>
+                <th>Abb</th>
+                <th>Region</th>
+                <th>Population</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alabama</td>
+                <td>AL</td>
+                <td>South</td>
+                <td>4779736</td>
+                <td>135</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Alaska</td>
+                <td>AK</td>
+                <td>West</td>
+                <td>710231</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Arizona</td>
+                <td>AZ</td>
+                <td>West</td>
+                <td>6392017</td>
+                <td>232</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Arkansas</td>
+                <td>AR</td>
+                <td>South</td>
+                <td>2915918</td>
+                <td>93</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>California</td>
+                <td>CA</td>
+                <td>West</td>
+                <td>37253956</td>
+                <td>1257</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Colorado</td>
+                <td>CO</td>
+                <td>West</td>
+                <td>5029196</td>
+                <td>65</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Connecticut</td>
+                <td>CT</td>
+                <td>Northeast</td>
+                <td>3574097</td>
+                <td>97</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Delaware</td>
+                <td>DE</td>
+                <td>South</td>
+                <td>897934</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>District of Columbia</td>
+                <td>DC</td>
+                <td>South</td>
+                <td>601723</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Florida</td>
+                <td>FL</td>
+                <td>South</td>
+                <td>19687653</td>
+                <td>669</td>
+            </tr>
+        </table>
+        <p>
+            View the full dataset
+            <a class="here" href="murders.pdf" target="_blank">Here</a>
+        </p>
+        <p>
+            <br />Download the full dataset
+            <a class="here" href="murders.csv" target="_blank">Here</a>
+        </p>
+        <div class="projects-sub-label-code">Code</div>
+        <p class="projects-sub-code" id="projects-sub-code">
+            <code>
                     library(tidyverse)<br />
                     library(ggrepel)<br />
                     library(ggthemes)<br />
@@ -200,20 +199,20 @@
                         scale_color_discrete(name = "Region") +<br />
                         theme_economist()<br />
                 </code>
+        </p>
+        <div class="projects-sub-label-visual">
+            <p class="projects-sub-visual" id="projects-sub-visual">
+                Visuals
             </p>
-            <div class="projects-sub-label-visual">
-                <p class="projects-sub-visual" id="projects-sub-visual">
-                    Visuals
-                </p>
-            </div>
-            <img class="image" src="murders_plot.png" />
-        </section>
-        <footer>
-            <p>
-                Created by
-                <a href="https://www.landryhouston.com" target="_blank">Landry Houston <i class="fab fa-python"></i></a>
-            </p>
-        </footer>
-    </body>
+        </div>
+        <img class="image" src="murders_plot.png" />
+    </section>
+    <footer>
+        <p>
+            Created by
+            <a href="https://www.landryhouston.com" target="_blank">Landry Houston <i class="fab fa-python"></i></a>
+        </p>
+    </footer>
+</body>
 
 </html>
