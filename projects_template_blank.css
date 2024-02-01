@@ -1,35 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-ul li {
-    display: inline-block;
-}
-
-ul li:hover ul {
-    display: block;
-}
-ul li ul {
-    position: absolute;
-    display: none;
-    background-color: #080808;
-}
-ul li ul li {
-    display: flex;
-}
-ul li ul li a {
-    display: block !important;
-    background: #080808;
-    width: 100%;
-}
-
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -53,16 +21,19 @@ html {
         font-size: 50%;
     }
 }
+
 @media (max-width: 60em) {
     html {
         font-size: 45%;
     }
 }
+
 @media (max-width: 55em) {
     html {
         font-size: 40%;
     }
 }
+
 @media (max-width: 50em) {
     html {
         font-size: 35%;
@@ -170,11 +141,13 @@ a {
     margin: 2em auto 2em auto;
     font-size: 3em;
 }
+
 .projects-sub-label-code {
     max-width: 640px;
     margin: 6em auto 2em auto;
     font-size: 3em;
 }
+
 .projects-sub-label-visual {
     max-width: 640px;
     margin: 2em auto 2em auto;
@@ -248,7 +221,7 @@ footer {
     border-top: 2px solid white;
 }
 
-footer > p {
+footer>p {
     margin: 3.5rem;
 }
 
