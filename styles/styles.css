@@ -4,6 +4,15 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 90em) {
+  html {
+    font-size: 65%;
+  }
+  h1 {
+    padding-top: 1.5em;
+  }
+}
+
 @media (max-width: 80em) {
   html {
     font-size: 65%;
