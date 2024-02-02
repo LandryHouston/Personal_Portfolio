@@ -87,7 +87,8 @@ a {
 }
 
 .nav-list a:hover {
-  background: black;
+  background: #060606;
+  border-radius: 50px;
 }
 
 #main-section {
