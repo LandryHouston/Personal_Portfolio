@@ -4,9 +4,21 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 90em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 80em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 @media (max-width: 75em) {
   html {
-    font-size: 60%;
+    font-size: 50%;
   }
 }
 
