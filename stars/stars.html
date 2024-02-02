@@ -1,194 +1,208 @@
 <!DOCTYPE html>
 <html>
-<title>Landry Houston Work</title>
-<meta name="theme-color" content="#080808" />
+  <title>Landry Houston Work</title>
+  <meta name="theme-color" content="#080808" />
 
-<head>
+  <head>
     <link rel="stylesheet" href=" \styles/stars_styles.css" />
-    <link rel="icon" href="styles/logo.png" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
-</head>
+    <link rel="icon" href="/styles\logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <nav id="navbar" class="nav">
-        <ul class="nav-list">
-            <li>
-                <a href="/index.html">Home</a>
-            </li>
-            <li>
-                <a href="/about\about.html">About</a>
-            </li>
-            <li>
-                <a href="/projects\projects.html">Projects</a>
-            </li>
-            <li>
-                <a href="/contact\contact.html">Contact</a>
-            </li>
-        </ul>
+      <ul class="nav-list">
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+        <li>
+          <a href="/about\about.html">About</a>
+        </li>
+        <li>
+          <a href="/projects\projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="/contact\contact.html">Contact</a>
+        </li>
+      </ul>
     </nav>
     <section id="stars" class="projects-section">
-        <h2 class="projects-sub-header">Stars</h2>
-        <nav id="project_navbar" class="project_nav">
-            <ul class="project_nav-list">
-                <li>
-                    <a href="#projects-sub-description">Description</a>
-                </li>
-                <li>
-                    <a href="#projects-sub-data">Data</a>
-                </li>
-                <li>
-                    <a href="#projects-sub-code">Code</a>
-                </li>
+      <h2 class="projects-sub-header">Stars</h2>
+      <nav id="project_navbar" class="project_nav">
+        <ul class="project_nav-list">
+          <li>
+            <a href="#projects-sub-description">Description</a>
+          </li>
+          <li>
+            <a href="#projects-sub-data">Data</a>
+          </li>
+          <li>
+            <a href="#projects-sub-code">Code</a>
+          </li>
 
-                <li>
-                    <a href="#projects-sub-visual">Visuals</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="projects-sub-label-description">Description</div>
-        <p class="projects-sub-description" id="projects-sub-description">
-            In this project you can see the relationship between the Magnitude and Temperature of the different
-            stars.<br />
-            This was programmed using R in R Studio<br /><br />
-            On the X-axis is Temperature and on the Y-axis is Magnitude.<br /><br />
-            As most of the stars magnitude increases, the temperature decreases.<br />
-            Stars with a higher temperature are more blue as cooler stars are more red.<br /><br />
-            Stellar classification is the classification of stars based on their spectral
-            characteristics.<br />
-            Most stars are currently classified under the Morgan&#45;Keenan (MK) system using the letters O, B, A,
-            F, G,
-            K, and M, a
-            sequence from the hottest (O type) to the coolest (M type).<br />
-            The legend easily color codes the different star types. The color does not represent the actual color of
-            the star.<br /><br /><br />
-            To learn more on Stars click <a class="here"
-                href="https://www.e-education.psu.edu/astro801/content/l4_p2.html">Here</a>
-        </p>
-        <div class="projects-sub-label-data">Data</div>
-        <p class="projects-sub-data" id="projects-sub-data">
-            Here is a preview of the Data
-        </p>
-        <table class="dataframe">
-            <tr>
-                <th></th>
-                <th>Star</th>
-                <th>Magnitude</th>
-                <th>Temp</th>
-                <th>Type</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Sun</td>
-                <td>4.8</td>
-                <td>5840</td>
-                <td>G</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>SiriusA</td>
-                <td>1.4</td>
-                <td>9620</td>
-                <td>A</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Canopus</td>
-                <td>-3.1</td>
-                <td>7400</td>
-                <td>F</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Arcturus</td>
-                <td>-0.4</td>
-                <td>4590</td>
-                <td>K</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>AlphaCentauriA</td>
-                <td>4.3</td>
-                <td>5840</td>
-                <td>G</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Vega</td>
-                <td>0.5</td>
-                <td>9900</td>
-                <td>A</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Capella</td>
-                <td>-0.6</td>
-                <td>5150</td>
-                <td>G</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>Rigel</td>
-                <td>-7.2</td>
-                <td>12140</td>
-                <td>B</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>ProcyonA</td>
-                <td>2.6</td>
-                <td>6580</td>
-                <td>F</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>Betelgeuse</td>
-                <td>-5.7</td>
-                <td>3200</td>
-                <td>M</td>
-            </tr>
-        </table>
-        <p>
-            View the full dataset
-            <a class="here" href="stars.pdf" target="_blank">Here</a>
-        </p>
-        <p>
-            <br />Download the full dataset
-            <a class="here" href="stars.csv" target="_blank">Here</a>
-        </p>
-        <div class="projects-sub-label-code">Code</div>
-        <p class="projects-sub-code" id="projects-sub-code">
-            <code>library(tidyverse)<br />
-                    library(dslabs)<br />
-                    data(stars)<br />
-                    options(digits = 3) # report 3 significant digits<br />
-                    <br />
-                    stars %>%<br />
-                    ggplot(aes(temp, magnitude, color = type)) +<br />
-                    geom_point() +<br />
-                    scale_x_reverse() +<br />
-                    scale_y_reverse() +<br />
-                    xlab("Temperature") +<br />
-                    ylab("Magnitude") +<br />
-                    geom_text(aes(label = star), check_overlap = TRUE, vjust =
-                    -1, size = 3, color = 'black')<br />
-                </code>
-        </p>
-        <div class="projects-sub-label-visual">
-            <p class="projects-sub-visual" id="projects-sub-visual">
-                Visuals
-            </p>
-        </div>
-        <img class="image" src="stars_plot.png" />
+          <li>
+            <a href="#projects-sub-visual">Visuals</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="projects-sub-label-description">Description</div>
+      <p class="projects-sub-description" id="projects-sub-description">
+        In this project you can see the relationship between the Magnitude and
+        Temperature of the different stars.<br />
+        This was programmed using R in R Studio<br /><br />
+        On the X-axis is Temperature and on the Y-axis is Magnitude.<br /><br />
+        As most of the stars magnitude increases, the temperature decreases.<br />
+        Stars with a higher temperature are more blue as cooler stars are more
+        red.<br /><br />
+        Stellar classification is the classification of stars based on their
+        spectral characteristics.<br />
+        Most stars are currently classified under the Morgan&#45;Keenan (MK)
+        system using the letters O, B, A, F, G, K, and M, a sequence from the
+        hottest (O type) to the coolest (M type).<br />
+        The legend easily color codes the different star types. The color does
+        not represent the actual color of the star.<br /><br /><br />
+        To learn more on Stars click
+        <a
+          class="here"
+          href="https://www.e-education.psu.edu/astro801/content/l4_p2.html"
+          >Here</a
+        >
+      </p>
+      <div class="projects-sub-label-data">Data</div>
+      <p class="projects-sub-data" id="projects-sub-data">
+        Here is a preview of the Data
+      </p>
+      <table class="dataframe">
+        <tr>
+          <th></th>
+          <th>Star</th>
+          <th>Magnitude</th>
+          <th>Temp</th>
+          <th>Type</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Sun</td>
+          <td>4.8</td>
+          <td>5840</td>
+          <td>G</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>SiriusA</td>
+          <td>1.4</td>
+          <td>9620</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Canopus</td>
+          <td>-3.1</td>
+          <td>7400</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Arcturus</td>
+          <td>-0.4</td>
+          <td>4590</td>
+          <td>K</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>AlphaCentauriA</td>
+          <td>4.3</td>
+          <td>5840</td>
+          <td>G</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Vega</td>
+          <td>0.5</td>
+          <td>9900</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Capella</td>
+          <td>-0.6</td>
+          <td>5150</td>
+          <td>G</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Rigel</td>
+          <td>-7.2</td>
+          <td>12140</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>ProcyonA</td>
+          <td>2.6</td>
+          <td>6580</td>
+          <td>F</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Betelgeuse</td>
+          <td>-5.7</td>
+          <td>3200</td>
+          <td>M</td>
+        </tr>
+      </table>
+      <p>
+        View the full dataset
+        <a class="here" href="stars.pdf" target="_blank">Here</a>
+      </p>
+      <p>
+        <br />Download the full dataset
+        <a class="here" href="stars.csv" target="_blank">Here</a>
+      </p>
+      <div class="projects-sub-label-code">Code</div>
+      <p class="projects-sub-code" id="projects-sub-code">
+        <code
+          >library(tidyverse)<br />
+          library(dslabs)<br />
+          data(stars)<br />
+          options(digits = 3) # report 3 significant digits<br />
+          <br />
+          stars %>%<br />
+          ggplot(aes(temp, magnitude, color = type)) +<br />
+          geom_point() +<br />
+          scale_x_reverse() +<br />
+          scale_y_reverse() +<br />
+          xlab("Temperature") +<br />
+          ylab("Magnitude") +<br />
+          geom_text(aes(label = star), check_overlap = TRUE, vjust = -1, size =
+          3, color = 'black')<br />
+        </code>
+      </p>
+      <div class="projects-sub-label-visual">
+        <p class="projects-sub-visual" id="projects-sub-visual">Visuals</p>
+      </div>
+      <img class="image" src="stars_plot.png" />
     </section>
     <footer>
-        <p>
-            Created by
-            <a href="https://www.landryhouston.com" target="_blank">Landry Houston <i class="fab fa-python"></i></a>
-        </p>
+      <p>
+        Created by
+        <a href="https://www.landryhouston.com" target="_blank"
+          >Landry Houston <i class="fab fa-python"></i
+        ></a>
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
