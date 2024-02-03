@@ -3,6 +3,21 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media (max-width: 110em) {
+  html {
+    font-size: 60%;
+  }
+  h2 {
+    margin-top: 2.2em;
+    margin-bottom: auto;
+  }
+  footer {
+    margin-top: 5em;
+  }
+  p {
+    margin-bottom: auto;
+  }
+}
 
 @media (max-width: 95em) {
   html {
