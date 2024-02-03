@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 80em) {
   html {
     font-size: 60%;
   }
