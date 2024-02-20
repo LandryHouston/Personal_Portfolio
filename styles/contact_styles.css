@@ -63,8 +63,9 @@ body {
   background-image: url("wallpaper2.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
   background-color: #080808;
+  overflow-x: hidden;
 }
 
 ul {
@@ -143,9 +144,10 @@ a {
 
 footer {
   font-weight: 300;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding-top: 2rem;
   border-top: 2px solid white;
 }
 
