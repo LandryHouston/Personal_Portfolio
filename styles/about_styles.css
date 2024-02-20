@@ -98,10 +98,134 @@ a {
 }
 
 .header {
-  font-size: 2em;
+  font-size: 4em;
   text-align: center;
-  margin: 15em auto 19.3em auto;
-  padding-bottom: 2em;
+  margin-top: 3em;
+  text-shadow: 0px 0px 50px black;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 70em;
+  margin: 0 auto;
+  margin-top: 6em;
+  margin-bottom: 2em;
+  border-radius: 60px;
+  background-color: rgba(8, 8, 8, 0.75);
+  box-shadow: 0px 0px 20px 10px black;
+}
+
+.about-img {
+  margin: auto;
+  width: 50%;
+  border-radius: 50px;
+  box-shadow: 0px 5px 20px 20px black;
+}
+
+.about-text {
+  padding: 50px;
+  font-size: 24px;
+  line-height: 160%;
+  margin-left: 3em;
+}
+
+.slideshow-header {
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 8em;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slide-image {
+  vertical-align: middle;
+  box-shadow: 0px 0px 20px 20px black;
+  border-radius: 30px;
+}
+
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #080808;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(8, 8, 8, 0.8);
+  color: white;
+}
+
+.numbertext {
+  color: #080808;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.75s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next {
+    font-size: 11px;
+  }
 }
 
 footer {
@@ -110,6 +234,7 @@ footer {
   justify-content: space-evenly;
   padding: 2rem;
   border-top: 2px solid white;
+  margin-top: 8em;
 }
 
 footer > p {

@@ -39,9 +39,172 @@
         </li>
       </ul>
     </nav>
-    <h2 class="header">
-      This page is not finished yet<br /><br />Please check back soon!
-    </h2>
+    <h1 class="header">Hello, I'm Landry Houston</h1>
+    <div class="about-container">
+      <img class="about-img" src="/about/Landry.png" />
+      <p class="about-text">
+        Welcome to my website! Let me tell you a little about myself. I am
+        competitive young professional aiming to advance my career as a Data
+        Scientist. With a technical background in automotive and equipment
+        technology, I excel at efficiently identifying and resolving problems. I
+        enjoy uncovering hidden information and creating data visualizations
+        that convey important insights. I'm excited to keep learning and
+        improving my skills in my career.<br /><br />Please explore my projects
+        and don't hesistate to reach out. Thank you for stopping by!
+      </p>
+    </div>
+    <div class="slideshow-container">
+      <h3 class="slideshow-header">Credentials</h3>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 11</div>
+        <img
+          class="slide-image"
+          src="/about/Associates Degree.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 11</div>
+        <img
+          class="slide-image"
+          src="/about/Associates Degree.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 11</div>
+        <img
+          class="slide-image"
+          src="/about/FreeCodeCamp_Responsive-Web-Design.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 11</div>
+        <img
+          class="slide-image"
+          src="/about/HarvardX-CS50P_Certificate.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 11</div>
+        <img
+          class="slide-image"
+          src="/about/FreeCodeCamp_Scientific-Computing-with-Python.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 11</div>
+        <img
+          class="slide-image"
+          src="/about/HarvardX-FC1x_Certificate.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 11</div>
+        <img
+          class="slide-image"
+          src="/about/HarvardX-CS109x_Certificate.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 11</div>
+        <img
+          class="slide-image"
+          src="/about/HarvardX-PH125.1x_Certificate.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 11</div>
+        <img
+          class="slide-image"
+          src="/about/HarvardX-PH125.2x_Certificate.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 11</div>
+        <img
+          class="slide-image"
+          src="/about/DavidsonX-DavidsonX.D005_Certificate.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">11 / 11</div>
+        <img
+          class="slide-image"
+          src="/about/DavidsonX-DavidsonX.D007_Certificate.png"
+          style="width: 100%"
+        />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+      <span class="dot" onclick="currentSlide(10)"></span>
+      <span class="dot" onclick="currentSlide(11)"></span>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
     <footer>
       <p>
         Created by
