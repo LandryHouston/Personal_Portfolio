@@ -125,9 +125,9 @@ a {
 }
 
 .projects-section-header {
-  max-width: 1107px;
   margin: 6rem auto 8rem auto;
   font-size: 4em;
+  text-shadow: 0px 0px 50px black;
 }
 
 .projects-section-label {
