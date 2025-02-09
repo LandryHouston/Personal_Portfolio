@@ -112,7 +112,7 @@ a {
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 90vh;
+  margin-top: 10em;
 }
 
 .contact-section > h2 {
@@ -136,11 +136,62 @@ a {
   font-size: 3rem;
   transition: transform 0.3s ease-out;
   padding: 1em;
+  padding-bottom: 5em;
 }
 
 .contact-details:hover {
   transform: translateY(8px);
 }
+
+#form-section > h1 {
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: rgba(8, 8, 8, 0.75);
+  box-shadow: 0 8px 20px 0 black, 0 8px 20px 0 #080808;
+  max-width: 750px;
+  width: 50%;
+  margin: 2em auto 5em auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  font-size: 2rem;
+}
+
+input, textarea {
+  font-size: 1.8rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: white;
+  color: #080808;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 50px;
+}
+
+button:hover {
+  width: 50%;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
 
 footer {
   font-weight: 300;
